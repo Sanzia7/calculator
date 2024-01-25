@@ -60,7 +60,7 @@ export const App = () => {
 		setOperator('')
 		setIsResult(true)
 	}
-
+	//создаем массив из объектов(один объект->это отельная кнопка калькулятора) и присваиваем его значение перемнной buttons:
 	const buttons = [
 		{ id: '1', label: '1', group: 'left', handler: handleNum },
 		{ id: '2', label: '2', group: 'left', handler: handleNum },
@@ -78,6 +78,7 @@ export const App = () => {
 		{ id: '=', label: '=', group: 'right', handler: handleResult },
 	]
 
+	// //создаем массив из одиночных точных чисел и присаиваем его значение переменой NUMS:
 	//const NUMS = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
 
 	const output = operand1 + operator + operand2
@@ -98,7 +99,8 @@ export const App = () => {
 									className={styles.btn}
 									onClick={() => {
 										handler(label)
-									}}>
+									}}
+								>
 									{label}
 								</button>
 							) : null,
@@ -107,10 +109,7 @@ export const App = () => {
 					<div className={styles.rightBtns}>
 						{buttons.map(({ id, label, group, handler }) =>
 							group === 'right' ? (
-								<button
-									key={id}
-									className={styles.btn}
-									onClick={handler}>
+								<button key={id} className={styles.btn} onClick={handler}>
 									{label}
 								</button>
 							) : null,

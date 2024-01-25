@@ -8,5 +8,5 @@
 	"trailingComma": "all",
 	"arrowParens": "always",
 	"bracketSameLine": false,
-	"singleAttributePerLine": true
+	"singleAttributePerLine": false
 }

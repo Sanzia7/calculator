@@ -42,7 +42,8 @@
 }
 
 .leftBtns {
-	width: 400px;
+	width: 60%;
+
 }
 
 .rightBtns {
@@ -53,7 +54,7 @@
 }
 
 .rightBtns.btn {
-	width: 90px;
+	width: 40%;
 }
 
 .btn {
